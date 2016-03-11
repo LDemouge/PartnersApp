@@ -1,0 +1,120 @@
+<form class="form-horizontal" name="supplierForm" ng-submit="submitForm(supplierForm.$valid)" novalidate>
+<div class="row">
+	<div class="page-header"><h1>Add a new supplier</h1></div>
+</div>
+<div class="col-sm-6">
+		
+	<!-- Company details fieldset -->
+		<fieldset class="partner-app">
+			<legend class="partner-app"><i class="fa fa-building"></i>&nbsp;&nbsp;Company details</legend>
+			<div class="form-group required">
+				<label class="control-label">Company name</label>
+				<input type="text" name="companyname" class="form-control" placeholder="company name" ng-model="newSupplier.company" required>
+			</div>
+			
+		</fieldset>
+		
+	<!-- Main address fieldset -->	
+		<fieldset class="partner-app">
+			<legend class="partner-app"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Main address</legend>
+			<div class="form-group">
+				<label class="control-label">Street 1</label>
+				<input type="text" name="street1" class="form-control" placeholder="street 1" ng-model="newSupplier.street1" required>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Street 2</label>
+				<input type="text" name="street2" class="form-control" placeholder="street 2" ng-model="newSupplier.street2" required>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label class="control-label">ZIP code</label>
+						<input type="number" name="zip" class="form-control" placeholder="zip code" ng-model="newSupplier.zip" required>
+					</div>
+				</div>
+				<div class="col-sm-8 col-sm-offset-1">
+					<div class="form-group">
+						<label class="control-label">City</label>
+						<input type="text" name="zip" class="form-control" placeholder="city" ng-model="newSupplier.city" required>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+		
+		<!-- accounting field set --->
+	<fieldset class="partner-app">
+		<legend class="partner-app"><i class="fa fa-money"></i>&nbsp;&nbsp;Accounting details</legend>
+		<div class="col-sm-5"><div class="form-group">
+				<label class="control-label">SIREN</label>
+				<input type="text" name="siren" class="form-control" placeholder="SIREN" ng-model="newSupplier.siren">
+			</div></div>
+			<div class="col-sm-6 col-sm-offset-1"><div class="form-group">
+				<label class="control-label">TVA Intra</label>
+				<input type="text" name="tvaintra" class="form-control" placeholder="TVA intracommunautaire" ng-model="newSupplier.tvaintra">
+			</div></div>
+	</fieldset>
+		
+</div>
+<div class="col-sm-6">
+	
+	<!-- specializations field set --->
+	<fieldset class="partner-app">
+		<legend class="partner-app"><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Specializations</legend>
+		<select-specialization tags="currentSpecializations"></select-specialization>
+	</fieldset>
+	
+	
+	<!-- tbd -->
+	
+	<!-- main contact fieldset -->
+	<fieldset class="partner-app">
+		<legend class="partner-app"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;Main contact</legend>
+		<div class="row">
+			<div class="col-sm-2"><div class="form-group">
+				<label class="control-label">Greeting</label>
+				<select class="form-control">
+					<option>M.</option>
+					<option>Mme</option>
+					<option>Melle</option>
+				</select>
+			</div></div>
+			
+			<div class="col-sm-9 col-sm-offset-1">
+				<div class="form-group">
+					<label class="control-label">Firstname</label>
+					<input type="text" name="firstname" placeholder="contact's firsname" class="form-control" required>
+				</div>
+			</div>
+			
+			<div class="col-sm-12">
+				<div class="form-group">
+					<label class="control-label">Lastname</label>
+					<input type="text" name="lastname" placeholder="contact's lastname" class="form-control" required>
+				</div>
+			</div>
+			
+			<div class="col-sm-5">
+				<div class="form-group">
+						<label class="control-label">Phone</label>
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-phone"></i></span>
+							<input type="number" name="phone" placeholder="mobile phone" class="form-control" required>
+						</div>
+						
+						
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-sm-offset-1">
+				<div class="form-group">
+						<label class="control-label">Email</label>
+						<div class="input-group">
+  							<span class="input-group-addon" id="basic-addon1">@</span>
+  							<input type="text" class="form-control" placeholder="email" aria-describedby="basic-addon1">
+						</div>
+				</div>
+			</div>
+		</div>
+	</fieldset>
+</div>
+</form>

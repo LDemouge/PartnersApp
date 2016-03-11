@@ -1,0 +1,9 @@
+{
+  "firebase": "partners-sgv3",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

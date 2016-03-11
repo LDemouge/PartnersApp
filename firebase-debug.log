@@ -1,0 +1,181 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase init
+[debug] Platform:     linux
+[debug] Node Version: v5.0.0
+[debug] Time:         Fri Mar 11 2016 09:25:10 GMT+0000 (UTC)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[warn] ⚠  Caution! Initializing outside your home directory
+[warn] ⚠  Initializing in a directory with 8 files
+[warn] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/account?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] Firebase initialized, configuration written to firebase.json
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] Platform:     linux
+[debug] Node Version: v5.0.0
+[debug] Time:         Fri Mar 11 2016 09:25:41 GMT+0000 (UTC)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/partners-sgv3/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/partners-sgv3/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'partners-sgv3'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing . directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/partners-sgv3/uploads/-KCZzjarbk1bKt0EPYnI?token=XXX&fileCount=1191&message= 
+[debug] <<< HTTP RESPONSE 200
+[info] ✔  1191 files uploaded successfully
+[debug] >>> HTTP REQUEST POST https://deploy.firebase.com/firebase/partners-sgv3/releases?token=XXX
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] URL: https://partners-sgv3.firebaseapp.com
+[info] Dashboard: https://partners-sgv3.firebaseio.com
+[info] 
+[info] Visit the URL above or run firebase open
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy -m testing update
+[debug] Platform:     linux
+[debug] Node Version: v5.0.0
+[debug] Time:         Fri Mar 11 2016 10:22:05 GMT+0000 (UTC)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/partners-sgv3/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/partners-sgv3/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'partners-sgv3'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing . directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/partners-sgv3/uploads/-KC_BeLg3agMl2IwCOl5?token=XXX&fileCount=1191&message=testing%20update 
+[debug] <<< HTTP RESPONSE 200
+[info] ✔  1191 files uploaded successfully
+[debug] >>> HTTP REQUEST POST https://deploy.firebase.com/firebase/partners-sgv3/releases?token=XXX
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] URL: https://partners-sgv3.firebaseapp.com
+[info] Dashboard: https://partners-sgv3.firebaseio.com
+[info] 
+[info] Visit the URL above or run firebase open
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy -m adding angularFire
+[debug] Platform:     linux
+[debug] Node Version: v5.0.0
+[debug] Time:         Fri Mar 11 2016 10:26:17 GMT+0000 (UTC)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/partners-sgv3/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/partners-sgv3/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'partners-sgv3'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing . directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/partners-sgv3/uploads/-KC_CbjyYjBgqCBvsKDi?token=XXX&fileCount=1191&message=adding%20angularFire 
+[debug] <<< HTTP RESPONSE 200
+[info] ✔  1191 files uploaded successfully
+[debug] >>> HTTP REQUEST POST https://deploy.firebase.com/firebase/partners-sgv3/releases?token=XXX
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] URL: https://partners-sgv3.firebaseapp.com
+[info] Dashboard: https://partners-sgv3.firebaseio.com
+[info] 
+[info] Visit the URL above or run firebase open
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy -m injecting angularFire
+[debug] Platform:     linux
+[debug] Node Version: v5.0.0
+[debug] Time:         Fri Mar 11 2016 10:27:37 GMT+0000 (UTC)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/partners-sgv3/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/partners-sgv3/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'partners-sgv3'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing . directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/partners-sgv3/uploads/-KC_CwP2KcPgZ4y6ICW6?token=XXX&fileCount=1191&message=injecting%20angularFire 
+[debug] <<< HTTP RESPONSE 200
+[info] ✔  1191 files uploaded successfully
+[debug] >>> HTTP REQUEST POST https://deploy.firebase.com/firebase/partners-sgv3/releases?token=XXX
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] URL: https://partners-sgv3.firebaseapp.com
+[info] Dashboard: https://partners-sgv3.firebaseio.com
+[info] 
+[info] Visit the URL above or run firebase open
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy -m testing injection
+[debug] Platform:     linux
+[debug] Node Version: v5.0.0
+[debug] Time:         Fri Mar 11 2016 10:52:08 GMT+0000 (UTC)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/partners-sgv3/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/partners-sgv3/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'partners-sgv3'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing . directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/partners-sgv3/uploads/-KC_IXmj6zpOXCCU2Yts?token=XXX&fileCount=1192&message=testing%20injection 
+[debug] <<< HTTP RESPONSE 200
+[info] ✔  1192 files uploaded successfully
+[debug] >>> HTTP REQUEST POST https://deploy.firebase.com/firebase/partners-sgv3/releases?token=XXX
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] URL: https://partners-sgv3.firebaseapp.com
+[info] Dashboard: https://partners-sgv3.firebaseio.com
+[info] 
+[info] Visit the URL above or run firebase open
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy -m testing injection
+[debug] Platform:     linux
+[debug] Node Version: v5.0.0
+[debug] Time:         Fri Mar 11 2016 10:55:11 GMT+0000 (UTC)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/partners-sgv3/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/partners-sgv3/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'partners-sgv3'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing . directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/partners-sgv3/uploads/-KC_JEMLoOJEsY8rC6re?token=XXX&fileCount=1192&message=testing%20injection 
+[debug] <<< HTTP RESPONSE 200
+[info] ✔  1192 files uploaded successfully
+[debug] >>> HTTP REQUEST POST https://deploy.firebase.com/firebase/partners-sgv3/releases?token=XXX
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] URL: https://partners-sgv3.firebaseapp.com
+[info] Dashboard: https://partners-sgv3.firebaseio.com
+[info] 
+[info] Visit the URL above or run firebase open
