@@ -1,5 +1,7 @@
 (function(){
 	
+	
+	
 	var controllers = angular.module('partnerController',['ui.router', 'ui.bootstrap', 'ui.bootstrap.tpls', 'ui.grid', 'ui.grid.selection']);
 	
 	controllers.controller('aSupplierCtrl', function($scope, $stateParams){
@@ -8,8 +10,15 @@
 	});
 	
 	
-	controllers.controller('suppliersCtrl', function($scope, $state){
+	controllers.controller('suppliersCtrl', function($scope, $state, User ){
 		
+		
+	
+		laurent = new User('laurent', 'demouge');
+		laurent.id=39;
+		laurent.lastname = 'lambda';
+		console.log(laurent.getLastname());
+		console.log(laurent);
 		
 		
 		$scope.gridOptions = {
@@ -83,22 +92,83 @@
 	controllers.controller('supplierPerformances', function(){});
 	
 	
-	controllers.controller('testCtrl', function(){
+	controllers.controller('testCtrl', function($q){
+		
 		var rootRef = new Firebase("https://partners-sgv3.firebaseio.com/test");
 		
-		var testRef = rootRef.child("contacts");
+		function authHandler(error, authData) {
+  			if (error) {
+    			console.log("Login Failed!", error);
+  			} else {
+    			console.log("Authenticated successfully with payload:", authData);
+  			}
+		}
+		
+		function authDataCallback(authData) {
+			
+				var i = 0;
+				
+  				if (authData) {
+    				console.log("User " + authData.uid + " is logged in with " + authData.provider);
+    				//rootRef.unauth();
+  				} else {
+    				console.log("User is logged out");
+    				authenticate();
+  				}
+		}
+		
+		function authenticate(){
+			rootRef.authWithPassword({
+				email: "exxan@exxan.fr",
+				password: ";unich2006*/"
+				},
+				authHandler);
+		}
+		
+		
+		rootRef.onAuth(authDataCallback);
+		
+		var testRef = rootRef.child("contacts").child('AAA' + Math.floor(Math.random() * 9999));
 		
 		testRef.set({
- 			 alanisawesome: {
     				date_of_birth: "June 23, 1912",
     				full_name: "Alan Turing"
-  			},
-  			gracehop2: {
-    				date_of_birth: "December 9, 1906",
-    				full_name: "Grace Hopper"
   			}
+  			);
+  			
+		rootRef.child("contacts").once('child_added', function(snap, prev){
+			console.log(snap.key());//rootRef.child('duplicates/' + snap.key() + '/').set(snap.val());
 		});
+		//rootRef.unauth();
 		
+		function asyncGreet(name) {
+  			
+  			var deferred = $q.defer();
+  			
+  			okToGreet = function(){return false;};
+
+  			setTimeout(function() {
+    			deferred.notify('About to greet ' + name + '.');
+
+    			if (okToGreet(name)) {
+      				deferred.resolve('Hello, ' + name + '!');
+    			} else {
+      				deferred.reject('Greeting ' + name + ' is not allowed.');
+    			}
+ 		 	}, 1000);
+
+  			return deferred.promise;
+		}
+
+	var promise = asyncGreet('Robin Hood');
+	
+	promise.then(
+		function(greeting) { alert('Success: ' + greeting);}, 
+		function(reason) { alert('Failed: ' + reason); }, 
+		function(update) { alert('Got notification: ' + update); }
+		);
+
+
 	});
 	
 	
